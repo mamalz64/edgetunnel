@@ -4,7 +4,7 @@ import * as lodash from 'https://jspm.dev/lodash-es';
 import { serveClient } from './deno/client.ts';
 import { processWebSocket } from '../../../libs/vless-js/src/lib/vless-js.ts';
 
-const userID = Deno.env.get('UUID') || '9ee2055abb9292c43110cecbd7a4020f';
+const userID = Deno.env.get('UUID') || '';
 let isVaildUser = uuid.validate(userID);
 if (!isVaildUser) {
   console.log('not set valid UUID');
